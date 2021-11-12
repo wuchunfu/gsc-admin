@@ -148,7 +148,7 @@ class GscAdmin(ModelView):
     }
 
     form_extra_fields = {
-        'content': fields.TextAreaField(label='内容', default='', validators=[validators.required()]),
+        'content': fields.TextAreaField(label='内容', default='', validators=[validators.DataRequired()]),
         'foreword': fields.TextAreaField(label='前言', default=''),
         'translation': fields.TextAreaField(label='翻译', default=''),
         'intro': fields.TextAreaField(label='简介', default=''),
