@@ -1,12 +1,11 @@
 # coding=utf-8
 import flask_login as login
 from flask_admin.contrib.sqla import ModelView
+from markupsafe import Markup
 from wtforms import fields, validators
 
-from markupsafe import Markup
 from snow.ext import db
 from snow.models.gsc import Gsc
-
 
 DYNASTY = [
     ('宋', '宋'),
@@ -26,6 +25,8 @@ DYNASTY = [
     ('金', '金'),
     ('明', '明'),
     ('清', '清'),
+    ('民国', '民国'),
+    ('近代', '近代'),
 ]
 
 
